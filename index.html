@@ -61,7 +61,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About me</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#courses">Courses</a></li>
                 </ul>
             </div>
         </div>
@@ -94,57 +94,58 @@
     </section>
 
     <!-- Projects-->
-    <section class="projects-section bg-light" id="projects">
+    <section class="projects-section bg-light text-center" id="projects" data-aos="fade-left" data-aos-duration="1500">
         <div class="container">
             <!-- Featured Project Row-->
             <h1>Projects</h1>
-            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                <div class="col-xl-8 col-lg-7"></div>
-                <div class="col-xl-4 col-lg-5">
-                    <div class="featured-text ">
-                        <h4>Shoreline</h4>
-                        <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use
-                            it for any project - even commercial projects! Download it, customize it, and publish your
-                            website!</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Project One Row-->
-            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="" /></div>
-                <div class="col-lg-6">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white">Misty</h4>
-                                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or
-                                    anything else, along with a description.</p>
-                                <hr class="d-none d-lg-block mb-0 ml-0" />
-                            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="hovereffect">
+                        <img class="card-img-top" src="assets/img/portalUca.png" alt="">
+                        <div class="overlay">
+                            <h2>Intranet UNAM-Canada</h2>
+                            <a class="info" data-toggle="modal" data-target="#modal-intranet">Know more</a>
                         </div>
                     </div>
+
                 </div>
+
             </div>
-            <!-- Project Two Row-->
-            <div class="row justify-content-center no-gutters">
-                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="" /></div>
-                <div class="col-lg-6 order-lg-first">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="text-white">Mountains</h4>
-                                <p class="mb-0 text-white-50">Another example of a project with its respective
-                                    description. These sections work well responsively as well, try this theme on a
-                                    small screen!</p>
-                                <hr class="d-none d-lg-block mb-0 mr-0" />
-                            </div>
-                        </div>
-                    </div>
+        </div>
+
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="modal-intranet" tabindex="-1" role="dialog" aria-labelledby="modal-intranetTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-intranetTitle">Intranet UNAM-Canada</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="video-container">
+                    <iframe class="receta-video"
+                        src="https://www.youtube.com/embed/iKvpgx0Oejo?rel=0;&amp;autoplay=1&amp;mute=1" frameborder="0"
+                        width="320" height="240"></iframe>
+                </div>
+                <div class="modal-body">
+                    This internal website is one of the main projects I had in my internship at UNAM-Canada, I built it
+                    with WordPress, and I modified the style using
+                    CSS on the WordPress template. <br>
+                    This portal allows employees to access internal and external resources that are useful and
+                    enables them to communicate, collaborate, and
+                    share documents and other information like company's news and insights.
+                    Since it is a private portal I cannot provide access to it, but instead I embeded a video that shows
+                    the functionalities of the portal.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
     <!--Experience-->
     <div class="page" id="experience" data-aos="fade-right" data-aos-duration="1500">
         <h1>Work Experience</h1>
@@ -222,9 +223,7 @@
                                     <ul>
                                         <li>
                                             Designing, building and maintaining an intranet site
-                                            using WordPress as an application framework. This site
-                                            centralizes important information providing fast and
-                                            easy access to it and makes collaboration easier.
+                                            using WordPress as an application framework.
                                         </li>
                                         <li> Administrating and maintaining their official website
                                             (https://canada.unam.mx/en/home/), managing user
@@ -283,18 +282,63 @@
         </div>
     </div>
     <!-- termina experiencia-->
-    <!-- Signup-->
-    <section class="signup-section" id="signup">
+    <!--Courses-->
+    <section class="about-section text-center" id="courses">
         <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto text-center">
-                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                    <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                    <form class="form-inline d-flex">
-                        <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email"
-                            placeholder="Enter email address..." />
-                        <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
-                    </form>
+            <div data-aos="fade-left" data-aos-duration="1500">
+                <h1>Courses and certificates</h1> <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <a href="assets/pdf/degree.pdf" target="_blank">
+                                <div class="img-hover-zoom">
+                                    <img class="card-img-top" src="assets/img/degree.png" alt="Card image cap">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Degree in Applied Mathematics and Computing</strong></h5>
+                                <p class="card-text">
+                                    UNAM <br>
+                                    07/2014 - 05/2018
+                                </p>
+                                <a href="assets/pdf/degree.pdf" target="_blank" class="btn ">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <a href="assets/pdf/DataBaseDesign.pdf" target="_blank">
+                                <div class="img-hover-zoom--blur">
+                                    <img class="card-img-top" src="assets/img/design database.png" alt="Card image cap">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Database Design in MySQL</strong></h5>
+                                <p class="card-text">
+                                    IT Open Knowledge Center <br>
+                                    04/2016
+                                </p>
+                                <a href="assets/pdf/degree.pdf" target="_blank" class="btn ">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <a href="assets/pdf/Web Design.pdf" target="_blank">
+                                <img class="card-img-top" src="assets/img/WebDesign.png" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Web development with Bootstrap and JS
+                                    </strong></h5>
+                                <p class="card-text">
+                                    UNAM<br>
+                                    06/2017
+                                </p>
+                                <a href="assets/pdf/degree.pdf" target="_blank" class="btn ">View</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
