@@ -8,19 +8,12 @@
     <meta name="author" content="" />
     <title>Ana Karen Delgado - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/img/ad4.png" />
-    <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="aos/aos.css" rel="stylesheet">
     <script src="aos/aos.js"></script>
-
 </head>
 
 <body id="page-top">
@@ -100,7 +93,7 @@
             <h1>Projects</h1>
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
-                    <div class="hovereffect">
+                    <div class="efecto-hover hovereffect">
                         <img class="card-img-top" src="assets/img/portalUca.png" alt="">
                         <div class="overlay">
                             <h2>Intranet UNAM-Canada</h2>
@@ -120,7 +113,8 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modal-intranetTitle">Intranet UNAM-Canada</h5>
+                    <h4 class="modal-title text-center" id="modal-intranetTitle">Intranet UNAM-Canada
+                    </h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -400,6 +394,21 @@
 
     <script>
         AOS.init();
+        jQuery(document).ready(function ($) {
+            var alterClass = function () {
+                var ww = document.body.clientWidth;
+                if (ww < 768) {
+                    $('.efecto-hover').removeClass('hovereffect');
+                } else {
+                    $('.efecto-hover').addClass('hovereffect');
+                };
+            };
+            $(window).resize(function () {
+                alterClass();
+            });
+            //Fire it when the page first loads:
+            alterClass();
+        });
     </script>
 </body>
 
