@@ -26,7 +26,7 @@ Inicia Fondo animado
 }
 .receta-video{
 	width: 100%;
-	height: 400px;
+	height: 300px;
   border:none;
 }
 
@@ -36,7 +36,7 @@ Inicia Fondo animado
 @media screen and (max-width: 400px) {
 	.receta-video{
 		width: 100%;
-		height: 400px;
+		height: 300px;
 	}
 }
 @media screen and (min-width: 401px) and (max-width: 580px) {
@@ -570,4 +570,10 @@ hr.ln{
 
 .footer {
   padding: 5rem 0;
+}
+/*Modal*/
+@media (min-width: 576px){
+.modal-dialog {
+  max-width: 600px;
+}
 }
