@@ -1,4 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;1,200&display=swap");
+.card {
+  height: 100%;
+}
+
+#img-dolce {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+.btn-secondary {
+  background-color: #b3b3b4;
+}
+
+.btn-b {
+  background-color: #5F9C9B;
+}
+
+.btn-b:hover, .btn-b:active, .btn-b:visited {
+  background-color: #2c787a;
+}
+
+.btn-b2 {
+  background-color: #9bb9d5;
+  color: #fff;
+  font-weight: 800;
+}
+
+.btn-b2:hover {
+  background-color: #73a3cf;
+  color: #fff;
+}
+
 /*
 Inicia Fondo animado
 */
@@ -258,7 +291,7 @@ p:not([class]):first-child {
 
 .time {
   padding: var(--timePadding, 0.25rem 1.25rem 0.25rem);
-  background-color: var(--timeBackgroundColor, #F4AFAB);
+  background-color: var(--timeBackgroundColor, #5F9C9B);
   font-size: var(--timeFontSize, 0.75rem);
   font-weight: var(--timeFontWeight, 600);
   text-transform: var(--timeTextTransform, uppercase);
@@ -274,10 +307,10 @@ p:not([class]):first-child {
 }
 
 .card {
-  border-radius: var(--timelineCardBorderRadius, 2px);
+  border-radius: 10px;
   border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
-  -webkit-box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24));
-          box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24));
+  -webkit-box-shadow: 2px 2px 3px lightgrey;
+          box-shadow: 2px 2px 3px lightgrey;
   background-color: var(--timelineCardBackgroundColor, #fff);
 }
 
@@ -384,12 +417,12 @@ p:last-child {
 Termina linea del tiempo
 */
 hr.ln {
-  border-top: 5px solid #F4AFAB;
+  border-top: 5px solid #5F9C9B;
 }
 
 .cv-img {
   border-radius: 50%;
-  border: solid 5px #DB7F67;
+  border: solid 5px #37686A;
   background-image: url("../assets/img/cvfoto.jpg");
   width: 200px;
   height: 200px;
@@ -484,8 +517,6 @@ hr.ln {
 }
 
 .img-hover-zoom {
-  height: 300px;
-  /* [1.1] Set it as per your need */
   overflow: hidden;
   /* [1.2] Hide the overflowing of child elements */
 }
@@ -512,6 +543,19 @@ hr.ln {
   position: relative;
   text-align: center;
   cursor: default;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hovereffect .overlay {
@@ -544,7 +588,8 @@ hr.ln {
   position: relative;
   font-size: 17px;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(133, 146, 158, 0.6);
+  font-weight: 600;
 }
 
 .hovereffect a.info {
@@ -552,13 +597,20 @@ hr.ln {
   text-decoration: none;
   padding: 7px 14px;
   border: 1px solid #fff;
-  margin: 50px 0 0 0;
-  background-color: transparent;
+  border-radius: 7px;
+  background-color: #9bb9d5;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
 }
 
 .hovereffect a.info:hover {
-  -webkit-box-shadow: 0 0 5px #fff;
-          box-shadow: 0 0 5px #fff;
+  -webkit-box-shadow: 0 0 5px white;
+          box-shadow: 0 0 5px white;
 }
 
 .hovereffect a.info, .hovereffect h2 {
@@ -577,10 +629,6 @@ hr.ln {
   filter: alpha(opacity=100);
   -webkit-transform: scale(1);
   transform: scale(1);
-}
-
-.hovereffect .info {
-  background: #D34F73 !important;
 }
 
 /*END OF IMAGE EFECTS*/

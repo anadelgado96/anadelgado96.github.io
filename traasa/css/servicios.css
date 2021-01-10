@@ -1,0 +1,35 @@
+.col1{
+	background-color: #1eb4e4 ;
+	color:#ffffff;
+	text-align:center;
+	
+}
+.col2{
+		background-color: #10cc96;
+}
+
+.col3{
+	background-color:#448AFF;
+	
+}
+
+.col4{
+	background-color: #fca827 ;
+	
+}
+.row{
+	padding:10px;
+	
+}
+.imgcol5{
+	float:left;
+	
+}
+.imgcol2{
+	float:right;
+	
+}
+.col5{
+	background-color: #a1a1a1;
+}
+

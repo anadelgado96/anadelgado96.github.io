@@ -1,0 +1,27 @@
+.right{
+	margin-top:50px;
+	float:right;
+}
+.header1{
+	margin-top:20px;
+	-webkit-animation-delay: 1s;
+		animation-delay: 1s;
+}
+.info{
+-webkit-animation-delay: .5s;
+		animation-delay: 1.3s;
+}
+
+.header {
+    color: #FF5722;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #E64A19;
+}
+.row{
+	clear.both;
+}

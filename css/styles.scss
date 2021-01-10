@@ -1,9 +1,35 @@
 @charset "UTF-8";
-$rosa:#F4AFAB;
-$rosa-fuerte:#D34F73;
-$melon: #DB7F67;
+$rosa:#5F9C9B;
+$rosa-fuerte:#2b7679;
+$melon: #37686A;
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;1,200&display=swap');
+
+.card{
+  height: 100%;
+}
+#img-dolce{
+  width: 80%;
+    margin: auto;
+    display: block;
+}
+.btn-secondary {
+    background-color: #b3b3b4;
+}
+.btn-b{
+   background-color: $rosa;
+}
+.btn-b:hover,.btn-b:active,.btn-b:visited {
+   background-color: #2c787a;
+}
+.btn-b2{
+  background-color: #9bb9d5;
+  color:#fff;
+}
+.btn-b2:hover{
+  background-color: #73a3cf;
+  color:#fff;
+}
 /*
 Inicia Fondo animado
 */
@@ -217,9 +243,9 @@ p:not([class]):first-child{
   margin-top: var(--cardContentMarginTop, .5rem);
 }
 .card{
-  border-radius: var(--timelineCardBorderRadius, 2px);
+  border-radius: 10px;
   border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
-  box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
+ box-shadow: 2px 2px 3px lightgrey;
   background-color: var(--timelineCardBackgroundColor, #fff);
 }
 .card__title{
@@ -386,7 +412,6 @@ hr.ln{
   transform: scale(1);
 }
 .img-hover-zoom {
-  height: 300px; /* [1.1] Set it as per your need */
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 }
 
@@ -407,6 +432,10 @@ hr.ln{
   position: relative;
   text-align: center;
   cursor: default;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .hovereffect .overlay {
@@ -440,7 +469,8 @@ hr.ln{
   position: relative;
   font-size: 17px;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(133, 146, 158, 0.6);
+  font-weight: 600;
 }
 
 .hovereffect a.info {
@@ -448,12 +478,19 @@ hr.ln{
   text-decoration: none;
   padding: 7px 14px;
   border: 1px solid #fff;
-  margin: 50px 0 0 0;
-  background-color: transparent;
+     border-radius: 7px;
+    background-color: #9bb9d5;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
 }
 
 .hovereffect a.info:hover {
-  box-shadow: 0 0 5px #fff;
+  box-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
 .hovereffect a.info, .hovereffect h2 {
@@ -474,9 +511,6 @@ hr.ln{
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-}
-.hovereffect .info{
-  background: $rosa-fuerte!important;
 }
 
 /*END OF IMAGE EFECTS*/

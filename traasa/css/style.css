@@ -1,0 +1,218 @@
+#bootstrap-touch-slider{
+	clear:both;
+	margin-top:100px;
+}
+/************************************************************
+*************************Navbar******************************
+*************************************************************/
+
+.navbar-brand{
+	padding:0;
+}
+
+.navbar {
+font-size: 21px;
+font-family: Open Sans;
+height:100px;
+}
+.myNav{
+	float: right;
+}
+.navbar {
+  background-color: rgb(209, 209, 209,0.9);;
+  border-color: #ff7600;
+}
+.navbar .navbar-brand {
+  color: #595959;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #08b9c6;
+}
+.navbar .navbar-text {
+	
+  color: #595959;
+}
+.navbar .navbar-nav > li > a {
+  color: #595959;
+  height:120px;
+  
+}
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+  color: #08b9c6;
+
+}
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+  color:  #ffffff;
+  background-color: #ff6b00;
+
+}
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .navbar-nav > .open > a:focus {
+  color: #08b9c6;
+  background-color: #ff7600;
+  
+}
+.navbar .navbar-toggle {
+  border-color: #ff7600;
+  
+}
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background-color: #ff7600;
+  
+}
+.navbar .navbar-toggle .icon-bar {
+  background-color: #595959;
+  
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border-color: #595959;
+  overflow:visible;
+}
+.navbar .navbar-link {
+  color: #595959;
+}
+.navbar .navbar-link:hover {
+  color: #08b9c6;
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-nav .open .dropdown-menu > li > a {
+    color: #595959;
+  }
+  .navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #08b9c6;
+  }
+  .navbar .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #08b9c6;
+    background-color: #ff7600;
+  }
+.parallax img{
+	width:30%;
+}
+	.logo-traasa{
+		width:50;
+		height:55
+	}
+	
+}
+
+
+/************************************************************
+*************************Footer******************************
+*************************************************************/
+
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Gudea);
+.footer1 {
+	margin-top: 0px;
+	padding-top:10px;
+	padding-bottom: 20px;
+	padding-left: 0;
+		border-top-width: 6px;
+	border-top-style: solid;
+	border-top-color: #08b9c6;
+	margin-left:20px;
+	clear:both;
+}
+
+
+
+.title-widget {
+	color: #898989;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1;
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 25px;
+	margin-left: 0;
+	padding-left: 28px;
+}
+
+.title-widget::before {
+    background-color: #ea5644;
+    content: "";
+    height: 22px;
+    left: 0px;
+    position: absolute;
+    top: -2px;
+    width: 5px;
+}
+
+
+
+.widget_nav_menu ul {
+    list-style: outside none none;
+    padding-left: 0;
+}
+
+.widget_archive ul li {
+    background-color: rgba(0, 0, 0, 0.3);
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 3px;
+}
+
+
+.widget_nav_menu ul li {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+	position: relative;
+    text-transform: uppercase;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+	width:95%;
+	margin-left:50 px;
+	
+}
+
+
+
+.title-median {
+    color: #636363;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.footerp p {font-family: 'Gudea', sans-serif; }
+
+.footer-bottom {
+    background-color: #ff6b00;
+    min-height: 10px;
+    width: 100%;
+}
+.copyright {
+    color: #fff;
+}
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+    color: #fff;
+}
+

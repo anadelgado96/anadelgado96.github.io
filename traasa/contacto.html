@@ -1,0 +1,218 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/contacto.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="css/slider.css">
+   <link rel="stylesheet" href="css/font-awesome.css">
+   <title>contacto</title>
+</head>
+<body>
+
+<!--Barra de navegación-->
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+		<span class="icon-bar"></span> 		
+      </button>
+     <a class="navbar-brand" href="#"><img src="images/logo.png" width="250px" height="100" alt="brand" style="position:absolute"></a>
+    </div>
+    <div class="collapse navbar-collapse myNav" id="myNavbar">
+      <ul class="nav navbar-nav">
+		 <li><a href="index.html"><br><span class=" glyphicon glyphicon-home"></span>&nbsp;&nbsp;Inicio</a></li>
+         <li><a href="nosotros.html"><br><span class=" glyphicon glyphicon-user"></span>&nbsp;&nbsp; Nosotros</a></li>
+		 <li><a href="servicios.html" ><br><span class=" glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp; Servicios</a></li>
+        <li class="active"><a href="#"><br><span class="glyphicon glyphicon-envelope"></span> &nbsp;&nbsp;Contacto</a></li>
+        <!--<li><a href="#">Page 5</a></li>-->
+      </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Termina el navBar-->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--FORMULARIO CONTACTO-->
+	
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-xs-12 col-lg-6 col-sm-6" >
+            <div class="well well-sm">
+                <form action="contacto.php" method="post" class="form-horizontal" method="post">
+                    <fieldset>
+                        <legend class="text-center header">Ponte en contacto con nosotros</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user fa-3x bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="name" name="name" type="text" placeholder="Nombre" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon fa-3x"></i></span>
+                            <div class="col-md-8">
+                                <input id="email" name="email" type="text" placeholder="Email*" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon fa-3x"></i></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon fa-3x"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message" placeholder="" rows="5" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+			
+        </div>
+		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-6">
+			<h1 id="header1" class="animated fadeInLeft"><span style="color:  #2ca2ce">Contacto</span></h1>
+				<span class=" info animated fadeInLeft">
+					<h2><span class="glyphicon glyphicon-earphone" style="color:  #2ca2ce"></span> <span style="color:  #2ca2ce">Llámanos hoy mismo</span></h2>
+					<p><mark>Teléfono (55) 75 95 94 80</mark></p>
+					<small>Horario de atención lunes a viernes de 09:00 am a 18:00 pm</small>
+
+					<h2><span class="glyphicon glyphicon-envelope"  style="color:  #2ca2ce"></span> <span style="color:  #2ca2ce"> Envíanos un mensaje </span></h2>
+					<p><mark>contacto@traasa.com</mark></p>
+
+					<h2><span class="glyphicon glyphicon-map-marker" style="color:  #2ca2ce"></span><span style="color:  #2ca2ce">  visítanos en</span></h2> 
+					<p><mark>Insurgentes sur 300 Despacho 222 B, Colonia Roma Norte, Delegación Cuauhtémoc, Ciudad de México C. P. 06700</mark></p>
+				</span>
+		</div>
+    </div>
+ </div>
+
+<!-- TERMINA FORMULARIO CONTACTO-->
+
+<div class="col-lg-12" class="img-responsive">
+
+	<div class="right" id="map" style="width:100%;height:400px;"></div>
+	<br>
+</div>
+<script>
+
+      function initMap() {
+        var myLatLng = {lat: 19.414239, lng: -99.165297};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 19,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'TRAASA'
+        });
+      }
+</script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXk26Im94ONEAtsvtcbvdgPLI6fshpxMk&callback=initMap"></script>
+
+
+
+<!--footer-->
+<footer class="footer1">
+<div class="row"><!-- row -->
+            
+                <div class="col-lg-3 col-md-3"><!-- widgets column left -->
+                <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        	<li class="widget-container widget_nav_menu"><!-- widgets list -->
+                    
+                                <h1 class="title-widget">Ir a:</h1>
+                                
+                                <ul>
+                                	<li><a  href="index.html" class="active"> >> Inicio</a></li>
+                                    <li><a  href="nosotros.html"> >> Nosotros</a></li>
+                                    <li><a  href="servicios.html"> >> Servicios</a></li>
+                                    <li><a  href="#" class="active">>> Contacto</a></li>
+                                </ul>
+                    
+							</li>
+                            
+                        </ul>
+                         
+                      
+                </div><!-- widgets column left end -->
+                
+                <div class="col-lg-3 col-md-3"><!-- widgets column center -->
+                
+                   
+                    
+                        <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        
+                        	<li class="widget-container widget_recent_news"><!-- widgets list -->
+                    
+                                <h1 class="title-widget">Detalles de contacto</h1>
+                                
+                                <div class="footerp"> 
+                                
+                                <h2 style="font-family:Times New Roman">TRAASA</h2>
+                                <p><b>Email:</b> <a href="mailto:contacto@traasa.com">contacto@traasa.com</a></p>
+                                <p><b>Teléfono: </b>
+
+    <b style="color:#ffc106;">(9AM to 6PM):</b>  (55) 75 95 94 80  </p>
+    
+    <p><b>Dirección</b></p>
+    <p>Insurgentes sur 300 Despacho 222 B, Colonia Roma Norte, Delegación Cuauhtémoc, Ciudad de México C. P. 06700</p>
+                                </div>
+                    		</li>
+                          </ul>
+                       </div>
+		<div class="col-lg-3 col-md-3 ">
+		<img src="images/logo.png" width="300" height="80" class="img-responsive">
+		
+		</div>
+		<div class="col-lg-3 col-md-3 ">
+		<img src="images/ajustech.jpg" width="300" height="140" class="img-responsive">
+		</div>
+		
+   </div>
+</footer>
+<!--header-->
+<div class="footer-bottom">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="copyright">
+					© 2017, TRAASA, All rights reserved
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="design">
+					 | Web Design & Development by SOFCOM
+				</div>
+			</div>
+		</div>
+</div>
+</body>
+	<script src="js/jquery.min.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+</html> 
