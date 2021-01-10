@@ -623,8 +623,9 @@ hr.ln{
     padding:5px;
   }
   .card h2{
-    font-size: 1rem!important;
-    font-weight: 700;
+   /* font-size: 1rem!important;
+    font-weight: 700;*/
+    display: none;
   }
   a.info{
     position: static!important;
