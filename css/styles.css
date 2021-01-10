@@ -24,7 +24,11 @@
 .btn-b2 {
   background-color: #9bb9d5;
   color: #fff;
-  font-weight: 800;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .btn-b2:hover {
@@ -592,7 +596,7 @@ hr.ln {
   font-weight: 600;
 }
 
-.hovereffect a.info {
+.hovereffect a.info, a.info {
   display: inline-block;
   text-decoration: none;
   padding: 7px 14px;
@@ -606,9 +610,11 @@ hr.ln {
   margin-left: auto;
   margin-right: auto;
   width: 150px;
+  color: #fff;
+  text-transform: uppercase;
 }
 
-.hovereffect a.info:hover {
+.hovereffect a.info:hover, a.info {
   -webkit-box-shadow: 0 0 5px white;
           box-shadow: 0 0 5px white;
 }
@@ -743,6 +749,19 @@ hr.ln {
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 5px;
+  }
+  .card h2 {
+    font-size: 1rem !important;
+    font-weight: 700;
+  }
+  a.info {
+    position: static !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */

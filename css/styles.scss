@@ -26,6 +26,10 @@ $melon: #37686A;
   background-color: #9bb9d5;
   color:#fff;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .btn-b2:hover{
   background-color: #73a3cf;
   color:#fff;
@@ -372,6 +376,7 @@ hr.ln{
     font-size: 4rem;
     line-height: 4rem;
   }
+
 }
 @media (min-width: 992px) {
   .area {
@@ -473,7 +478,7 @@ hr.ln{
   font-weight: 600;
 }
 
-.hovereffect a.info {
+.hovereffect a.info,a.info {
   display: inline-block;
   text-decoration: none;
   padding: 7px 14px;
@@ -487,9 +492,11 @@ hr.ln{
     margin-left: auto;
     margin-right: auto;
     width: 150px;
+    color: #fff;
+  text-transform: uppercase;
 }
 
-.hovereffect a.info:hover {
+.hovereffect a.info:hover, a.info {
   box-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
@@ -610,4 +617,16 @@ hr.ln{
 .modal-dialog {
   max-width: 600px;
 }
+}
+@media (max-width: 768px){
+  .card{
+    padding:5px;
+  }
+  .card h2{
+    font-size: 1rem!important;
+    font-weight: 700;
+  }
+  a.info{
+    position: static!important;
+  }
 }
