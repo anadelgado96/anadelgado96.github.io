@@ -1,0 +1,9 @@
+click derecho en la ubicacion del proyecto
+click GIT Bash here
+git status
+git add .
+git commit -m "Actualizacion contact info"
+git push origin main
+iniciar sesion y listo
+este es el url de mi sitio
+https://anadelgado96.github.io/
