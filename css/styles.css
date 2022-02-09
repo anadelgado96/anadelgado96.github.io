@@ -761,7 +761,7 @@ a.info {
 
 @media (max-width: 768px) {
   .card {
-    padding: 5px;
+    padding: 20px 30px;
   }
   .card h2 {
     /* font-size: 1rem!important;
@@ -770,6 +770,24 @@ a.info {
   }
   a.info {
     position: static !important;
+  }
+  .text-left {
+    text-align: center !important;
+  }
+  .cv-img {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .navbar .container {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  #mainNav {
+    background-color: rgba(255, 255, 255, 0.9);
   }
 }
 /*# sourceMappingURL=styles.css.map */
